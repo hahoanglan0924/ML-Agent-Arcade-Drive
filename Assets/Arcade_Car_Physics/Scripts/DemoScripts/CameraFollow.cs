@@ -32,7 +32,7 @@ using UnityEngine.UI;
 		[SerializeField] float lerpRotationMultiplier = 1f;
 
 		// Speedometer
-		[SerializeField] Text speedometer = null;
+		//[SerializeField] Text speedometer = null;
 
 		// We use a rigidbody to prevent the camera from going in walls but it means sometime it can get stuck
 		Rigidbody rb;
@@ -96,20 +96,20 @@ using UnityEngine.UI;
 				transform.position = new Vector3(transform.position.x , 0.5f, transform.position.z);
 			}
 
-			// Update speedometer
-			if (speedometer != null && vehicle != null)
-			{
-				StringBuilder sb = new StringBuilder();
-				sb.Append("Speed:");
-				sb.Append(((int) (vehicle.Speed)).ToString());
-				sb.Append(" Kph");
+			//// Update speedometer
+			//if (speedometer != null && vehicle != null)
+			//{
+			//	StringBuilder sb = new StringBuilder();
+			//	sb.Append("Speed:");
+			//	sb.Append(((int) (vehicle.Speed)).ToString());
+			//	sb.Append(" Kph");
 
-				speedometer.text = sb.ToString();
-			}
-			else if (speedometer.text != "")
-			{
-				speedometer.text = "";
-			}
+			//	speedometer.text = sb.ToString();
+			//}
+			//else if (speedometer.text != "")
+			//{
+			//	speedometer.text = "";
+			//}
 			
 		}
 	}

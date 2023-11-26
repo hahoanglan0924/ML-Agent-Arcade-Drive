@@ -250,7 +250,7 @@ using UnityEngine;
                 em.rateOverTime = handbrake ? 0 : Mathf.Lerp(em.rateOverTime.constant, Mathf.Clamp(150.0f * throttle, 30.0f, 100.0f), 0.1f);
             }
 
-            if (isPlayer && allowBoost) {
+            if (allowBoost) {
                 boost += Time.deltaTime * boostRegen;
                 if (boost > maxBoost) { boost = maxBoost; }
             }
@@ -301,7 +301,7 @@ using UnityEngine;
             }
 
             // Jump
-            if (jumping && isPlayer) {
+            if (jumping) {
                 if (!IsGrounded)
                     return;
                 

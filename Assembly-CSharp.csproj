@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>PH</RootNamespace>
-    <ProjectGuid>{6CA72542-AD66-28B5-81F5-135AAB81ECB6}</ProjectGuid>
+    <ProjectGuid>{84007750-CE0D-5DEC-84C6-BB627CFEC3F7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -67,7 +67,6 @@
     <Compile Include="Assets\Arcade_Car_Physics\Scripts\VehicleInputs.cs" />
     <Compile Include="Assets\Arcade_Car_Physics\Scripts\Trails\TrailEmitter.cs" />
     <Compile Include="Assets\Arcade_Car_Physics\Scripts\DemoScripts\CheckpointManager.cs" />
-    <Compile Include="Assets\Arcade_Car_Physics\Scripts\DemoScripts\Checkpoints.cs" />
     <Compile Include="Assets\KartAgent.cs" />
     <Compile Include="Assets\Arcade_Car_Physics\Scripts\WheelVehicle.cs" />
   </ItemGroup>
